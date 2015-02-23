@@ -34,7 +34,7 @@ public class MemoWriter {
       writer.print(dateStamp.toString() + "-delim-");
       
       System.out.println("Enter the line of text for your memo: ");
-      writer.println(input.nextLine() + "-delim-");
+      writer.print(input.nextLine() + "-delim-");
     }
     writer.close();
     input.close();
