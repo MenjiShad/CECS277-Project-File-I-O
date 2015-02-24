@@ -1,3 +1,9 @@
+/* James Dinh
+ * 2015/02/23
+ * Purpose: Write and read memos from a file
+ * Input: File name, Memo topic, Memo body into File
+ * Output: Memo topic, Date Stamp, Memo Body from File
+ */
 import java.util.Scanner;
 
 public class MemoTester {
