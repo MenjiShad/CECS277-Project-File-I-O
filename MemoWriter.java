@@ -24,7 +24,7 @@ public class MemoWriter {
     this.delimiter = delimiter;
     outFile = new File(outFileName);
     
-    // Don't overwrite exisiting files
+    // Don't overwrite existing files
     if (outFile.exists()) {
       System.out.println("File already exists. Exiting...");
       System.exit(0);
