@@ -14,7 +14,8 @@ public class MemoReader {
   private Scanner fileReader;
   private final int NUM_OF_MEMO_LINES = 3;
   
-  // Constructor to initialize the delimiter
+  // Constructor to initialize the Scanner and delimiter
+  // This allows each object of MemoReader to have it owns Scanner
   public MemoReader(File inFile, String delimiter) {
     try {
       fileReader = new Scanner(inFile);
@@ -35,6 +36,7 @@ public class MemoReader {
       counter = NUM_OF_MEMO_LINES;
     }
     
+    // Reads each "line"/token of the memo
     while (counter < NUM_OF_MEMO_LINES) {
       System.out.println(fileReader.next());
       if (counter == NUM_OF_MEMO_LINES - 1)
